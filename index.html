@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#6e3047">
+  <title>For Tasya ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&family=Parisienne&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="surprise" class="surprise hidden" aria-hidden="true">
+    <div class="petal-field" aria-hidden="true"></div>
+    <div class="surprise-content">
+      <p class="eyebrow">ONE LITTLE SURPRISE...</p>
+      <h1>Something special<br><em>is waiting for you</em> ♡</h1>
+      <div id="giftBox" class="gift-box" role="button" tabindex="0" aria-label="Buka hadiah">
+        <div class="gift-glow"></div>
+        <div class="gift-lid"></div><div class="gift-body"></div>
+        <div class="gift-ribbon-v"></div><div class="gift-ribbon-h"></div>
+        <div class="gift-bow"><span></span><span></span></div>
+      </div>
+      <p id="giftHint" class="gift-hint">Tap the gift ✨</p>
+    </div>
+  </div>
+  <div id="hearts" aria-hidden="true"></div>
+
+  <section id="lock" class="screen active">
+    <div class="lock-card">
+      <div class="mini-flower">✿</div>
+      <p class="eyebrow">A LITTLE SURPRISE FOR YOU</p>
+      <h1>For Tasya <span>♡</span></h1>
+      <p class="muted">Ada sesuatu yang dibuat khusus untuk hari spesialmu.</p>
+      <div class="code-boxes" id="codeBoxes">
+        <span>•</span><span>•</span><span>•</span><span>•</span><span>•</span><span>•</span>
+      </div>
+      <input id="codeInput" inputmode="numeric" maxlength="6" autocomplete="off" placeholder="Enter 6 digit code" aria-label="Kode rahasia">
+      <button id="unlockBtn" class="primary">Open Surprise ✨</button>
+      <p id="codeMessage" class="code-message">Hint: tanggal spesial 🎂</p>
+    </div>
+  </section>
+
+  <main id="main" class="hidden">
+    <section class="hero section">
+      <div class="stars"></div>
+      <div class="hero-photo-wrap reveal">
+        <div class="hero-photo-glow"></div>
+        <img class="hero-photo" src="assets/hero.jpg" alt="Foto Tasya">
+        <span class="photo-stamp">30.09.2011 ♡</span>
+      </div>
+      <div class="hero-content reveal">
+        <p class="eyebrow">30 SEPTEMBER 2011 · A DAY WORTH CELEBRATING</p>
+        <h2>Happy<br><em>Birthday</em><br><strong>Tasya</strong> ♡</h2>
+        <p class="hero-copy">Semoga halaman-halaman berikut menjadi pengingat kecil bahwa kamu sudah tumbuh sejauh ini — dan masih ada banyak cerita indah di depan.</p>
+        <button class="ghost" data-scroll="#bouquet">Open your gifts ↓</button>
+      </div>
+      <div class="floating-balloon b1">♡</div>
+      <div class="floating-balloon b2">✦</div>
+      <div class="floating-balloon b3">♡</div>
+    </section>
+
+    <section id="bouquet" class="section soft">
+      <div class="section-head reveal">
+        <span class="number">01</span>
+        <p class="eyebrow">A SMALL GIFT</p>
+        <h3>Digital Bouquet <span>🌷</span></h3>
+        <p>Buket kecil yang tidak akan layu, ditemani doa-doa baik untukmu.</p>
+      </div>
+      <div class="bouquet-card reveal">
+        <div class="flowers" aria-hidden="true">
+          <i>🌷</i><i>🌸</i><i>🌷</i><i>🌼</i><i>🌷</i>
+        </div>
+        <p>“Semoga hal-hal baik selalu menemukan jalan pulang kepadamu.”</p>
+        <button class="primary" id="bouquetBtn">Send Bouquet 🌷</button>
+      </div>
+    </section>
+
+    <section id="memory" class="section dark">
+      <div class="section-head reveal">
+        <span class="number">02</span>
+        <p class="eyebrow">LITTLE MOMENTS</p>
+        <h3>Memory <span>📸</span></h3>
+        <p>Enam potongan kecil dari perjalananmu. Klik foto untuk melihatnya lebih dekat.</p>
+      </div>
+      <div class="memory-grid">
+        <figure class="memory-card reveal"><img src="assets/memory-1.jpg" alt="Memory 1"><figcaption>little girl, big heart.</figcaption></figure>
+        <figure class="memory-card reveal"><img src="assets/memory-2.jpg" alt="Memory 2"><figcaption>one little smile.</figcaption></figure>
+        <figure class="memory-card reveal"><img src="assets/memory-3.jpg" alt="Memory 3"><figcaption>curious about the world.</figcaption></figure>
+        <figure class="memory-card reveal"><img src="assets/memory-4.jpg" alt="Memory 4"><figcaption>growing, one day at a time.</figcaption></figure>
+        <figure class="memory-card reveal"><img src="assets/memory-5.jpg" alt="Memory 5"><figcaption>a smile worth remembering.</figcaption></figure>
+        <figure class="memory-card reveal"><img src="assets/memory-6.jpg" alt="Memory 6"><figcaption>some moments stay.</figcaption></figure>
+      </div>
+    </section>
+
+    <section id="journey" class="section">
+      <div class="section-head reveal">
+        <span class="number">03</span>
+        <p class="eyebrow">KEEP GROWING</p>
+        <h3>Your Journey <span>📝</span></h3>
+        <p>Bukan tentang seberapa cepat kamu sampai. Ini tentang semua hal yang sudah kamu lewati.</p>
+      </div>
+      <div class="timeline">
+        <article class="timeline-item reveal"><span>01</span><div><h4>Little beginnings</h4><p>Semua cerita besar selalu dimulai dari sesuatu yang kecil.</p></div></article>
+        <article class="timeline-item reveal"><span>02</span><div><h4>Growing up</h4><p>Kamu belajar, berubah, mencoba lagi, dan menjadi versi dirimu yang baru.</p></div></article>
+        <article class="timeline-item reveal"><span>03</span><div><h4>Beautiful moments</h4><p>Ada hari yang sederhana, ada hari yang sulit. Semuanya ikut membentukmu.</p></div></article>
+        <article class="timeline-item reveal"><span>04</span><div><h4>Next chapter</h4><p>Masih banyak tempat, mimpi, tawa, dan cerita yang belum kamu temui.</p></div></article>
+      </div>
+    </section>
+
+    <section id="letter" class="section soft">
+      <div class="section-head reveal">
+        <span class="number">04</span>
+        <p class="eyebrow">SOMETHING FROM THE HEART</p>
+        <h3>A Letter For You <span>💌</span></h3>
+      </div>
+      <div class="envelope-wrap reveal">
+        <button id="envelope" class="envelope" aria-label="Buka surat">
+          <div class="flap"></div><div class="seal">♡</div>
+          <span>tap to open</span>
+        </button>
+        <div id="letterPaper" class="letter-paper">
+          <p class="script">For Tasya,</p>
+          <p>Nat, ingat terus ya, aku di sini bakal selalu ada untuk mendukung kamu dalam keadaan apa pun. Aku ingin kita berjuang dan sukses sama-sama nanti. Kalau ada masalah, takut, atau hal yang bikin kamu down, ceritakan semuanya ke aku, ya? Aku siap jadi pendengar setiamu. Bagaimanapun jalannya, aku ingin kamu selalu bahagia. Jangan pernah menyerah dengan apa yang kamu yakini. Kejar terus sampai berhasil, Cantik. Sukses selalu, panjang umur, sehat terus, dan jangan lupa tingkatkan ibadahnya ya, Manis.</p>
+          <p class="script sign">— Yazdan Rafif</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="playlist" class="section dark">
+      <div class="section-head reveal">
+        <span class="number">05</span>
+        <p class="eyebrow">PRESS PLAY</p>
+        <h3>Playlist For You <span>🎵</span></h3>
+        <p>Tiga lagu dengan suasana hangat untuk menemani halaman ini.</p>
+      </div>
+      <div class="playlist">
+        <button class="song active reveal" data-song="0"><span class="play-icon">▶</span><span><b>Perfect</b><small>Ed Sheeran</small></span><em>01</em></button>
+        <button class="song reveal" data-song="1"><span class="play-icon">▶</span><span><b>A Thousand Years</b><small>Christina Perri</small></span><em>02</em></button>
+        <button class="song reveal" data-song="2"><span class="play-icon">▶</span><span><b>Kamu Cantik Kamu Baik</b><small>Playlist</small></span><em>03</em></button>
+      </div>
+      <div class="music-note">♫ <span id="nowPlaying">Pilih lagu untuk mulai memutar musik.</span></div>
+      <audio id="audioPlayer" preload="metadata"></audio>
+    </section>
+
+    <section id="jar" class="section">
+      <div class="section-head reveal">
+        <span class="number">06</span>
+        <p class="eyebrow">ONE LAST LITTLE THING</p>
+        <h3>Shake The Jar <span>🫙</span></h3>
+        <p>Klik berkali-kali sampai sebuah pesan kecil keluar.</p>
+      </div>
+      <div class="jar-area reveal">
+        <button id="jarBtn" class="jar" aria-label="Shake the jar"><span>♡</span><small>SHAKE</small></button>
+        <p id="jarHint">0 / 5</p>
+        <div id="jarMessage" class="jar-message"></div>
+      </div>
+    </section>
+
+    <section id="finale" class="finale section">
+      <div class="finale-glow"></div>
+      <div class="reveal">
+        <p class="eyebrow">AND ONE LAST THING...</p>
+        <h3>Happy Birthday,<br><em>Tasya</em> ♡</h3>
+        <p>Semoga chapter berikutnya jauh lebih indah dari yang kamu bayangkan.</p>
+        <div class="signature">with love & good wishes</div>
+        <button class="ghost light" data-scroll="#memory">↺ See the memories again</button>
+      </div>
+    </section>
+  </main>
+
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <button id="closeLightbox" aria-label="Tutup">×</button>
+    <img id="lightboxImg" src="" alt="">
+    <p id="lightboxCaption"></p>
+  </div>
+
+  <div id="toast" class="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
